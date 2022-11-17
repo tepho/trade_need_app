@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  cpf: MyString
+  email: MyString
+  phone: MyString
+  birthday: 2022-11-16
+  balance: 9.99
+  credit: 9.99
+  username: MyString
+  password: MyString
+
+two:
+  name: MyString
+  cpf: MyString
+  email: MyString
+  phone: MyString
+  birthday: 2022-11-16
+  balance: 9.99
+  credit: 9.99
+  username: MyString
+  password: MyString
