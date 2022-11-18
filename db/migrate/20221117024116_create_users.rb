@@ -7,7 +7,6 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :phone
       t.date :birthday
       t.decimal :balance, :null => false
-      t.decimal :credit, :null => false
       t.string :password, :null => false
       t.boolean :is_active, default: true
       

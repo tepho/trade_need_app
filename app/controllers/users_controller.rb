@@ -35,7 +35,18 @@ class UsersController < ApplicationController
 
   # DELETE /users/1
   def destroy
-    @user.destroy
+    @user.discard
+  end
+
+  # RETURN /users/1 transactions by date
+  def extract_by_date
+    if params[:from_date].nil? || params[:to_date].nil?
+      render json: {'error': "Missing filter filter date"}, status: :unprocessable_entity
+    end
+
+    @transaction = Transaction.where(created_at: params[:from_date].to_date.beginning_of_day..params[:to_date].to_date.end_of_day).where("origin_id = #{params[:id]} or destiny_id = #{params[:id]}")
+
+    render json: {'data':@transaction , 'meta':{'count':@transaction.size}}
   end
 
   private
@@ -46,6 +57,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.require(:user).permit(:name, :cpf, :email, :phone, :birthday, :full_name, :password)
+      params.require(:user).permit(:name, :cpf, :email, :phone, :birthday, :full_name, :password, :to_date, :from_date)
     end
 end
