@@ -1,24 +1,21 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# trade_need_app
+APP teste dev - Necessidade Negocial
 
-Things you may want to cover:
 
-* Ruby version
+* Ruby version "3.1.2"
 
-* System dependencies
+* Rails version "7.0.4"
+
+* Database "PostgreSQL 13.3, compiled by Visual C++ build 1914, 64-bit"
 
 * Configuration
 
-* Database creation
+* Git clone
 
-* Database initialization
+* Bundle install
 
-* How to run the test suite
+* Database creation "rake db:create"
 
-* Services (job queues, cache servers, search engines, etc.)
+* Database initialization "rake db:migrate"
 
-* Deployment instructions
-
-* ...
