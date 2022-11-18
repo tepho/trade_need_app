@@ -49,6 +49,12 @@ class UsersController < ApplicationController
     render json: {'data':@transaction , 'meta':{'count':@transaction.size}}
   end
 
+  # RETURN /users/1 amount
+  def account_balance
+    @user = User.find(params[:id])
+    render json: {'amount':@user.balance }
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
