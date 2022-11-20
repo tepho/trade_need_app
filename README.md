@@ -19,3 +19,7 @@ APP teste dev - Necessidade Negocial
 
 * Database initialization "rake db:migrate"
 
+
+*Para teste usar o "rspec" resultados ficam disponivel dentro da /coverage/index.html para visualizar com o simpleCov
+
+![alt text](https://github.com/tepho/trade_need_app/blob/main/spec/models/coverage_print.PNG)
