@@ -42,8 +42,11 @@ gem 'tzinfo-data', '1.2014.5'
 # A simple ActiveRecord mixin to add conventions for flagging records as discarded.
 gem 'discard'
 
-# StaticRecord 
-# gem 'static-record', require: 'static_record'
+gem 'rspec'
+gem 'rspec-rails'
+
+#SimpleCov is a code coverage analysis tool for Ruby. 
+gem 'simplecov', require: false, group: :test
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

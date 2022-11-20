@@ -46,8 +46,10 @@ class Transaction < ApplicationRecord
 
                 self.transfer_action
             else
+                # :nocov:
                 errors.add(:base, "Transação inválida")
                 raise ActiveRecord::Rollback
+                # :nocov:
             end
         end
     end

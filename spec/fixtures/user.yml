@@ -1,0 +1,35 @@
+user_1:
+  full_name: "Clifford A."
+  cpf: "04998207112"
+  email: "test@gmail.com"
+  phone:  "63981475788"
+  birthday: <%= DateTime.now %>
+  password: "123"
+  balance: "100.0"
+
+user_2:
+  full_name: "Marcus A."
+  cpf: "04998207113"
+  email: "test@gmail.com"
+  phone:  "63981475788"
+  birthday: <%= DateTime.now %>
+  password: "123"
+  balance: "100.0"
+
+user_3:
+  full_name: "Julio A."
+  cpf: "04998207115"
+  email: "test@gmail.com"
+  phone:  "63981475788"
+  birthday: <%= DateTime.now %>
+  password: "123"
+  balance: "100.0"
+
+user_4:
+  full_name: "Luciana A."
+  cpf: "04998207114"
+  email: "test@gmail.com"
+  phone:  "63981475788"
+  birthday: <%= DateTime.now %>
+  password: "123"
+  balance: "100.0"
